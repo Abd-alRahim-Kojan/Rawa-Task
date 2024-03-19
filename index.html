@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Droppex</title>
+    <link rel="icon" type="image/x-icon" href="assets/svg/box.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- sidenav section -->
+    <section class="sidenav">
+      <div class="container">
+        <div class="top-div">
+          <div class="logo">
+            <img src="assets/svg/box.svg" alt="logo" />
+            <h3>Droppex</h3>
+          </div>
+          <button class="new-folder">
+            <img src="./assets/svg/folder-add.svg" alt="folder-add" />
+            New Folder
+          </button>
+          <ul class="nav-items">
+            <li class="active">
+              <a href="#" class="nav-item">
+                <img src="./assets/svg/category.svg" alt="category" />
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="nav-item">
+                <img src="./assets/svg/trash.svg" alt="trash" />
+                <span>Trash</span>
+              </a>
+            </li>
+            <div class="divider">
+              <hr />
+            </div>
+            <li>
+              <a href="#" class="nav-item">
+                <img src="./assets/svg/cloud.svg" alt="cloud" />
+                <span>Storage</span>
+              </a>
+              <div class="circle-prgress">
+                <div class="percent">
+                  <svg>
+                    <circle cx="70" cy="70" r="70"></circle>
+                    <circle cx="70" cy="70" r="70"></circle>
+                  </svg>
+                  <div class="num">
+                    <h2>10<span>%</span></h2>
+                  </div>
+                </div>
+                <h2 class="text">10GB / 100GB</h2>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-div"></div>
+      </div>
+    </section>
+
+    <!-- header section -->
+    <header>
+      <div class="container">
+        <div class="search-upload-section">
+          <div class="search">
+            <div class="search-box">
+              <img src="./assets/svg/search-normal.svg" alt="search" />
+              <input
+                type="text"
+                placeholder="Search for file, folder, shared storehouse"
+              />
+            </div>
+            <button>
+              <img src="./assets/svg/setting-4.svg" alt="setting" />
+            </button>
+          </div>
+          <div class="upload">
+            <img src="./assets/svg/upload.svg" alt="upload " />
+            <label for="file-upload"
+              >Drag and drop <span>files</span> , <span>folders</span> or
+              <span>links</span></label
+            >
+            <input
+              type="file"
+              name="file-upload"
+              id="file-upload"
+              placeholder="Upload files"
+            />
+          </div>
+          <div class="profile">
+            <img src="./assets/svg/link.svg" alt="link" />
+            <img
+              src="./assets/svg/profile.svg"
+              alt="profile"
+              class="profile-img"
+            />
+          </div>
+        </div>
+        <div class="title-section">
+          <h2>Ramy Main Drive</h2>
+          <button>
+            <img src="./assets/svg/attention.svg" alt="attention" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <section class="main">
+      <div class="container">
+        <div class="table-options">
+          <div class="header-text">
+            <p>Select folder or file to see options</p>
+            <p>No item selected</p>
+          </div>
+          <div class="header-filter">
+            <button>
+              <img src="./assets/svg/Swap.svg" alt="Swap" />
+            </button>
+            <button>
+              <img src="./assets/svg/Filter.svg" alt="Filter" />
+            </button>
+          </div>
+          <div class="header-buttons">
+            <button>
+              <img src="./assets/svg/password-check.svg" alt="password-check" />
+            </button>
+            <button>
+              <img src="./assets/svg/checkbox-1.svg" alt="checkbox" />
+            </button>
+            <button>
+              <img src="./assets/svg/stack.svg" alt="stack" />
+            </button>
+            <button>
+              <img src="./assets/svg/arrow-square-left.svg" alt="arrow" />
+            </button>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr class="table-header">
+              <th><input type="checkbox" /></th>
+              <th>Name</th>
+              <th>Uploaded</th>
+              <th>Size</th>
+              <th>View No.</th>
+              <th class="button-wrapper">
+                <p>Last modified</p>
+                <button class="arrow-button">
+                  <img src="./assets/svg/arrow-down.svg" alt="arrow" />
+                </button>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container">
+                  <img src="./assets/svg/folder.svg" alt="folder" />
+                </div>
+                <p>the file that is the ... .png</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>1.8 MB</td>
+              <td>0 times</td>
+              <td>Dec 10, 2022 2:00PM you</td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container new">
+                  <img src="./assets/images/img-white.png" alt="white" />
+                </div>
+                <p>the file that is the ... .png</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>86.8 KB</td>
+              <td>2 times</td>
+              <td>Dec 10, 2022 2:00PM user@gmail...</td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container new">
+                  <img src="./assets/svg/pdf.svg" alt="pdf" />
+                </div>
+                <p>Project Details.pdf</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>1.8 MB</td>
+              <td>3 times</td>
+              <td>Dec 10, 2022 2:00PM user@gmail...</td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container new">
+                  <img src="./assets/images/img-coder.png" alt="coder" />
+                </div>
+                <p>the file that is the ... .png</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>400 KB</td>
+              <td>4 times</td>
+              <td>Dec 10, 2022 2:00PM +966 123456789</td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container">
+                  <img src="./assets/svg/docs.svg" alt="docs" />
+                </div>
+                <p>the file that is the ... .png</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>1.8 MB</td>
+              <td>0 times</td>
+              <td>Dec 10, 2022 2:00PM you</td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container new">
+                  <img src="./assets/images/img-editor.png" alt="editor" />
+                </div>
+                <p>video.mp4</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>40 MB</td>
+              <td>2 times</td>
+              <td>Dec 10, 2022 2:00PM you</td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container new">
+                  <img src="./assets/svg/sound.svg" alt="sound" />
+                </div>
+                <p>sound.mp3</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>1.8 MB</td>
+              <td>3 times</td>
+              <td>Dec 10, 2022 2:00PM +966 123456789</td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container new">
+                  <img src="./assets/svg/ptt.svg" alt="ptt" />
+                </div>
+                <p>coding.pptx</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>16 MB</td>
+              <td>2 times</td>
+              <td>Dec 10, 2022 2:00PM user@gmail...</td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container">
+                  <img src="./assets/svg/xls.svg" alt="xls" />
+                </div>
+                <p>Project Details.xls</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>1.8 MB</td>
+              <td>0 times</td>
+              <td>Dec 10, 2022 2:00PM you</td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container new">
+                  <img src="./assets/images/img-editor.png" alt="editor" />
+                </div>
+                <p>video.mp4</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>1.8 MB</td>
+              <td>2 times</td>
+              <td>Dec 10, 2022 2:00PM user@gmail...</td>
+            </tr>
+            <tr>
+              <td class="checkbox"><input type="checkbox" /></td>
+              <td class="img">
+                <div class="img-container">
+                  <img src="./assets/svg/docs.svg" alt="docs" />
+                </div>
+                <p>the file that is the ... .png</p>
+              </td>
+              <td>Nov 26, 2022 3:18AM</td>
+              <td>1.8 MB</td>
+              <td>0 times</td>
+              <td>Dec 10, 2022 2:00PM you</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
